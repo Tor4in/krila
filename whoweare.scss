@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) {
+    .person{
+        margin: -20%;
+        width: 90%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: #ccc;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .person{
+        margin: -28%;
+        width: 120%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: #ddd;
+    }
+     
+} 
+
+
+
+main{
+    
+    .wraper{ 
+        .person_list{
+            width: 100%;
+            padding: 30% 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .person{
+                
+                &:nth-child(1){
+                    transform: translateX(-50%);
+                }
+                &:nth-child(2){
+                    transform: translateX(50%);
+                }
+                &:nth-child(3){
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    
+}
