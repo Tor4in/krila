@@ -1,21 +1,3 @@
-@media screen and (max-width: 1200px) {
-  .person {
-    margin: -20%;
-    width: 90%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #ccc;
-  }
-}
-@media screen and (max-width: 900px) {
-  .person {
-    margin: -28%;
-    width: 120%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #ddd;
-  }
-}
 main .wraper .person_list {
   width: 100%;
   padding: 30% 0;
@@ -30,15 +12,50 @@ main .wraper .person_list {
       -ms-flex-align: center;
           align-items: center;
 }
+main .wraper .person_list .person {
+  background-color: var(--color3);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 85%;
+  margin: -16%;
+  -webkit-transition: all ease-out 0.7s;
+  transition: all ease-out 0.7s;
+}
+@media screen and (max-width: 1200px) {
+  main .wraper .person_list .person {
+    margin: -20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .wraper .person_list .person {
+    margin: -28%;
+    width: 120%;
+  }
+}
 main .wraper .person_list .person:nth-child(1) {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+main .wraper .person_list .person:nth-child(1):hover {
+  background-color: var(--color4);
+  -webkit-transform: scale(1.3) translateX(-40%);
+          transform: scale(1.3) translateX(-40%);
 }
 main .wraper .person_list .person:nth-child(2) {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
+main .wraper .person_list .person:nth-child(2):hover {
+  background-color: var(--color4);
+  -webkit-transform: scale(1.3) translateX(40%);
+          transform: scale(1.3) translateX(40%);
+}
 main .wraper .person_list .person:nth-child(3) {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+main .wraper .person_list .person:nth-child(3):hover {
+  background-color: var(--color4);
+  -webkit-transform: scale(1.3) translateX(-40%);
+          transform: scale(1.3) translateX(-40%);
 }
